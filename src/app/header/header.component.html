@@ -10,21 +10,24 @@
         <span></span>
       </div>
     </div>
-    <div class="navbar-end navbar-menu"  [ngClass]="{'is-active':toggleNav}">
-      <a routerLink="/" class="navbar-item r-item">Home</a>
-      <a class="navbar-item r-item">About</a>
-      <a class="navbar-item r-item">Features</a>
-      <a routerLink="/faq" class="navbar-item r-item">FAQ</a>
-      <div class="navbar-item">
-        <p class="control"> 
-          <a class="button is-primary is-outlined">
+    <div class="navbar-menu"  [ngClass]="{'is-active':toggleNav}">
+      <div class="navbar-end ">
+        <a routerLink="/" class="navbar-item r-item">Home</a>
+        <a class="navbar-item r-item">About</a>
+        <a class="navbar-item r-item">Features</a>
+        <a routerLink="/faq" class="navbar-item r-item">FAQ</a>
+        <div class="navbar-item">
+          <p class="control">
+            <a class="button is-primary is-outlined">
             <span class="icon">
               <i class="fa fa-download"></i>
             </span>
-            <span>Join Now</span>
-          </a>
-        </p>
+              <span>Join Now</span>
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
+      </div>
+
   </div>
 </div>

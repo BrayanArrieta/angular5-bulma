@@ -4,19 +4,19 @@
     <div class="navbar-brand">
       <a routerLink="/" class="navbar-item">MyCompany</a>
 
-      <div class="navbar-burger">
+      <div class="navbar-burger" (click)="toggleNav=!toggleNav;" [ngClass]="{'is-active':toggleNav}" >
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <div class="navbar-end navbar-menu">
+    <div class="navbar-end navbar-menu"  [ngClass]="{'is-active':toggleNav}">
       <a routerLink="/" class="navbar-item r-item">Home</a>
       <a class="navbar-item r-item">About</a>
       <a class="navbar-item r-item">Features</a>
       <a routerLink="/faq" class="navbar-item r-item">FAQ</a>
       <div class="navbar-item">
-        <p class="control">
+        <p class="control"> 
           <a class="button is-primary is-outlined">
             <span class="icon">
               <i class="fa fa-download"></i>
